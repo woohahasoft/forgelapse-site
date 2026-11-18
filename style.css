@@ -1,0 +1,33 @@
+:root {
+  color-scheme: light dark;
+  --text: #1c1b1f;
+  --muted: #5f5c66;
+  --bg: #ffffff;
+  --accent: #b3261e;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text: #e6e1e5;
+    --muted: #aaa6b0;
+    --bg: #141218;
+    --accent: #f2b8b5;
+  }
+}
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+}
+main {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 32px 16px 64px;
+}
+h1 { font-size: 1.8rem; margin-bottom: 0.25rem; }
+h2 { font-size: 1.2rem; margin-top: 2rem; }
+a { color: var(--accent); }
+.meta, nav { color: var(--muted); font-size: 0.9rem; }
+nav a { margin-right: 12px; }
+hr { border: 0; border-top: 1px solid var(--muted); opacity: 0.3; margin: 48px 0; }
